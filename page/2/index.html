@@ -156,11 +156,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                9
+                10
                 <span>文章</span>
             </div>
             <div class="article-info-block">
-                6
+                7
                 <span>标签</span>
             </div>
         </div>
@@ -209,7 +209,7 @@
 
             
             <section id="main">
-    <article id="post-practice-android-retrofit-rxjava-mvp" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-reading-notes-end-of-average" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -217,7 +217,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2017/12/11/practice-android-retrofit-rxjava-mvp/">Retrofit + Rxjava + MVP 学习记录</a>
+            <a class="article-title" href="/2018/01/26/reading-notes-end-of-average/">平均的终结</a>
         </h1>
     
 
@@ -226,8 +226,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/12/11/practice-android-retrofit-rxjava-mvp/">
-            <time datetime="2017-12-10T16:00:22.373Z" itemprop="datePublished">2017-12-11</time>
+        <a href="/2018/01/26/reading-notes-end-of-average/">
+            <time datetime="2018-01-26T13:18:17.072Z" itemprop="datePublished">2018-01-26</time>
         </a>
     </div>
 
@@ -236,7 +236,7 @@
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/android笔记/">android笔记</a>, <a class="tag-link" href="/tags/coder/">coder</a>
+        <a class="tag-link" href="/tags/读书笔记/">读书笔记</a>
     </div>
 
                     </div>
@@ -247,19 +247,14 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <blockquote>
-<p>学习中用到的文章<br><a href="http://www.jianshu.com/p/c81c48144029" target="_blank" rel="external">文章合集</a><br><a href="http://www.jianshu.com/p/7b839b7c5884" target="_blank" rel="external">参考的第一篇搭建三者框架的文章</a><br><a href="https://segmentfault.com/q/1010000006837645/a-1020000006842890" target="_blank" rel="external">将获取到的内容直接解析成 String</a><br><a href="http://gank.io/post/560e15be2dca930e00da1083" target="_blank" rel="external">扔物线的 Rxjava 教程</a><br><a href="http://www.jianshu.com/u/c50b715ccaeb" target="_blank" rel="external">简书 Rxjava 教程</a><br><a href="https://www.jianshu.com/p/213d7062cdbe" target="_blank" rel="external">剪切板问题</a><br><a href="https://www.jianshu.com/p/8cf84f719188" target="_blank" rel="external">Rxjava 的一些用处</a><br><a href="http://blog.csdn.net/yy1300326388/article/details/43965493" target="_blank" rel="external">WebView 不跳转系统浏览器</a></p>
-</blockquote>
-<h3 id="用到的新的开源库"><a href="#用到的新的开源库" class="headerlink" title="用到的新的开源库"></a>用到的新的开源库</h3><h5 id="1-开源库fragmentation"><a href="#1-开源库fragmentation" class="headerlink" title="1. 开源库fragmentation"></a>1. 开源库<a href="https://github.com/YoKeyword/Fragmentation/blob/master/README_CN.md" target="_blank" rel="external">fragmentation</a></h5><h5 id="2-circleimageview"><a href="#2-circleimageview" class="headerlink" title="2. circleimageview"></a>2. <a href="https://github.com/hdodenhof/CircleImageView" target="_blank" rel="external">circleimageview</a></h5><h3 id="学到的新的知识点"><a href="#学到的新的知识点" class="headerlink" title="学到的新的知识点"></a>学到的新的知识点</h3><h5 id="1-BottomNavigationView-的使用及其拓展"><a href="#1-BottomNavigationView-的使用及其拓展" class="headerlink" title="1. BottomNavigationView 的使用及其拓展"></a>1. BottomNavigationView 的使用及其拓展</h5><!-- TODO: -->
-<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><h5 id="1-将获取到的内容直接解析成-String，使用了开源库-Java-Scalars-Converter"><a href="#1-将获取到的内容直接解析成-String，使用了开源库-Java-Scalars-Converter" class="headerlink" title="1. 将获取到的内容直接解析成 String，使用了开源库 Java Scalars Converter"></a>1. 将获取到的内容直接解析成 String，使用了开源库 <a href="https://github.com/square/retrofit/tree/master/retrofit-converters/scalars#java-scalars-converter" target="_blank" rel="external">Java Scalars Converter</a></h5><p>找了很多地方，花了很多时间，最后还是回到了官方的开源库 ~</p>
-<h5 id="2-没有-RxJavaCallAdapterFactory-这个类"><a href="#2-没有-RxJavaCallAdapterFactory-这个类" class="headerlink" title="2. 没有 RxJavaCallAdapterFactory 这个类"></a>2. 没有 <code>RxJavaCallAdapterFactory</code> 这个类</h5><p>在 <code>StackOverflow</code> 上问了一下，回答效率真的快，还要看一下文档，<a href="https://stackoverflow.com/questions/47741842/cannot-resolve-symbol-rxjavacalladapterfactory/47741919#47741919" target="_blank" rel="external">链接</a></p>
-<h5 id="3-unable-to-parse-template-“Class”"><a href="#3-unable-to-parse-template-“Class”" class="headerlink" title="3. unable to parse template “Class”"></a>3. unable to parse template “Class”</h5><p>将模板修改回来，代码为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#if ($&#123;PACKAGE_NAME&#125; &amp;&amp; $&#123;PACKAGE_NAME&#125; != &quot;&quot;)package $&#123;PACKAGE_NAME&#125;;#end</div><div class="line">#parse(&quot;File Header.java&quot;)</div><div class="line">public class $&#123;NAME&#125; &#123;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h5 id="4-Entry-fileTemplates-Singleton-java-ft-not-found"><a href="#4-Entry-fileTemplates-Singleton-java-ft-not-found" class="headerlink" title="4. Entry fileTemplates//Singleton.java.ft not found"></a>4. Entry fileTemplates//Singleton.java.ft not found</h5><p>将 <code>-Djdk.util.zip.ensureTrailingSlash=false</code> 添加到安装目录的 studio64.vmoptions 文件里面。</p>
-<h5 id="5-ButterKnife-使用绑定-View-时出错"><a href="#5-ButterKnife-使用绑定-View-时出错" class="headerlink" title="5. ButterKnife 使用绑定 View 时出错"></a>5. ButterKnife 使用绑定 View 时出错</h5><p>原因是包名里边出现了 <code>android</code>，将其修改即可。</p>
-<h5 id="6-切换-Fragment-后-WebView-总是重新加载"><a href="#6-切换-Fragment-后-WebView-总是重新加载" class="headerlink" title="6. 切换 Fragment 后 WebView 总是重新加载"></a>6. 切换 Fragment 后 WebView 总是重新加载</h5><p>使用 ViewPager 的缓存机制解决。<a href="http://blog.csdn.net/maxwit_john_huang/article/details/22099461" target="_blank" rel="external">解决链接</a></p>
-<h3 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h3><h5 id="1-Atom-双击打开新的标签页"><a href="#1-Atom-双击打开新的标签页" class="headerlink" title="1. Atom 双击打开新的标签页"></a>1. Atom 双击打开新的标签页</h5><p>解决单击打开文件覆盖当前页面的问题。</p>
-<h5 id="2-Android-删除行的快捷键"><a href="#2-Android-删除行的快捷键" class="headerlink" title="2. Android 删除行的快捷键"></a>2. Android 删除行的快捷键</h5><p><code>Ctrl + x</code></p>
-<h5 id="3-svg-转-vector"><a href="#3-svg-转-vector" class="headerlink" title="3. svg 转 vector"></a>3. svg 转 vector</h5><p><a href="http://inloop.github.io/svg2android/" target="_blank" rel="external">http://inloop.github.io/svg2android/</a></p>
+            <p>《平均的终结》提到，目前的世界是被平均思维所束缚的时代，个体变得不再重要。</p>
+<p>然而，作者认为个体是十分重要的，由于平均思维的限制，有个性的人被认为是异类，打破了系统的平衡。</p>
+<p>文中举了一些例子，其中让我印象比较深刻的是通过成绩来判定一个学生的好坏，以及学校的课程安排。这一切源于泰勒的思想，目的是为了节省时间成本，让学生之间都学习相同的内容，每一个学生其实都只是为了适应今后的工作而存在的，然后通过成绩的优劣，来判定学生的好坏，因为他们认为，一个学生如果在一个方面优秀，那么他在其他方面也会优秀。</p>
+<p>作者应对平均思维提出了三个原则：锯齿性原则、情境原则、途径原则。</p>
+<p>其中锯齿性原则讲的是人在一个方面优秀，但是在另一个方面不一定也做的好，同样，一个人在一方面做的差，但在另一方面可能做的很好。</p>
+<p>情境原则讲的是人在不同的情境下，性格其实是不同的，作者告诉我们，当我们和一个人在交谈时，心里应该想一想，ta 在另一个情境下可能不是这样的，同时，我们在做事情的时候也要学会找到适合自己的情境。</p>
+<p>途径原则告诉我们在做一件事情的时候，是有很多种途径的，并非只有一个途径。</p>
+<p>想了想，其实平均原则对于我们平时的企业生产效率是很有益的，系统，不需要过多的操作，但是对于个人，则会显得死板，人变成了机器，要想走得远，就需要有打破平衡的勇气，这是自己认认真真完整看完的第一本比较长的书籍，希望自己能成为一个有个性的人吧，学习、成长有快有慢，但是只要有结果，就不辜负自己！</p>
 
         
         </div>
@@ -270,7 +265,7 @@
 
 </div>
 
-    <a data-url="http://leedev.cn/2017/12/11/practice-android-retrofit-rxjava-mvp/" data-id="cjd4pbbd2000bvwvk8vz9mjqs" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://leedev.cn/2018/01/26/reading-notes-end-of-average/" data-id="cjesguvhs000jf4vkokaf535w" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -347,7 +342,7 @@
 
 
     <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/3/">下一页 &raquo;</a>
+        <a class="extend prev" rel="prev" href="/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/3/">下一页 &raquo;</a>
     </nav>
 </section>
             
@@ -358,6 +353,25 @@
         <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/02/02/reading-notes-docker-practice/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/02/02/reading-notes-docker-practice/" class="title">Docker-从入门到实践</a></p>
+                            <p class="item-date"><time datetime="2018-02-01T16:27:13.664Z" itemprop="datePublished">2018-02-02</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -435,25 +449,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2017/12/06/food-tofu-rou/" class="thumbnail">
-    
-    
-        <span style="background-image:url(http://oz2xvosfo.bkt.clouddn.com/foodtofu.jpg)" alt="豆腐炒肉" class="thumbnail-image"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/12/06/food-tofu-rou/" class="title">豆腐炒肉</a></p>
-                            <p class="item-date"><time datetime="2017-12-06T13:25:08.473Z" itemprop="datePublished">2017-12-06</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -465,7 +460,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/android笔记/" style="font-size: 10px;">android笔记</a> <a href="/tags/coder/" style="font-size: 15px;">coder</a> <a href="/tags/java后端开发/" style="font-size: 10px;">java后端开发</a> <a href="/tags/学习记录/" style="font-size: 10px;">学习记录</a> <a href="/tags/菜谱/" style="font-size: 20px;">菜谱</a> <a href="/tags/读书笔记/" style="font-size: 10px;">读书笔记</a>
+            <a href="/tags/android笔记/" style="font-size: 10px;">android笔记</a> <a href="/tags/coder/" style="font-size: 16.67px;">coder</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/java后端开发/" style="font-size: 10px;">java后端开发</a> <a href="/tags/学习记录/" style="font-size: 10px;">学习记录</a> <a href="/tags/菜谱/" style="font-size: 20px;">菜谱</a> <a href="/tags/读书笔记/" style="font-size: 13.33px;">读书笔记</a>
         </div>
     </div>
 
@@ -482,6 +477,10 @@
                 
                     <li>
                         <a href="https://portal.qiniu.com">七牛</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://shimo.im/">石墨文档</a>
                     </li>
                 
             </ul>
